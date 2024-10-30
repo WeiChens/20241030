@@ -1,0 +1,131 @@
+.root {
+  min-height: 500px;
+  background-color: #f7f5ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 80px 0;
+  .title {
+    font-family: tiempos-headline-light;
+    font-size: 45px;
+  }
+  .desc {
+    color: rgb(75 85 99);
+    max-width: 32rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .upload-box {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px dashed #d6d3d1;
+    display: flex;
+    width: 275px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    .tips {
+      color: #565656;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .document {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: calc(100vw - 40px);
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .page-container {
+    transition: 0.3s;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    .rot-btn {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      fill: white;
+      width: 20px;
+      height: 20px;
+      background-color: #ff612f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    &:hover {
+      background-color: #f9fafb;
+    }
+    .page-num {
+      font-size: 12px;
+      text-align: center;
+      user-select: none;
+      margin-bottom: 5px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+  .page {
+    // overflow: hidden;
+    transition: 0.3s;
+    box-sizing: border-box;
+    border: 1px dashed #d6d3d1;
+  }
+  .btns {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    gap: 10px;
+    justify-content: center;
+    .btn {
+      color: #fff;
+      padding: 10px 12px;
+      font-weight: 500;
+      font-size: 16px;
+      background-color: #ff612f;
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        background-color: #f35d2f;
+      }
+    }
+    .btn2 {
+      background-color: #1f2937;
+
+      &:hover {
+        background-color: #111827;
+      }
+    }
+    .tool-btn {
+      user-select: none;
+      background-color: white;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
